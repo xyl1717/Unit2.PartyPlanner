@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Planner</title>
+</head>
+<body>
+  <h1>Party Planner</h1>
+
+  <section class="party-list">
+    <h2>Upcoming Parties</h2>
+    <ul id="party-list">
+      <!-- Parties will be dynamically added here -->
+    </ul>
+  </section>
+
+  <section class="add-party">
+    <h2>Schedule a New Party</h2>
+    <form id="add-party-form">
+      <label for="name">Party Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <input type="submit" value="Add Party">
+    </form>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
